@@ -1,20 +1,20 @@
-# Advanced Time Series Forecasting with Deep Learning and Explainability
+# Advanced Time Series Forecasting — Simple Dataset (LSTM + SARIMAX + SHAP)
 
+This repo is a simple, GitHub-safe implementation for the assessment:
+- Synthetic dataset (1 target `y`, 2 exogenous features)
+- LSTM model for multi-step forecasting (single-step in this simplified version)
+- SARIMAX baseline
+- Evaluation: RMSE and WAPE
+- SHAP explainability (DeepExplainer) with fallback
 
-This repository implements a synthetic multivariate time-series forecasting project required for the assessment. It generates a multi-year hourly dataset (trend, multiple seasonalities, exogenous variables), trains an LSTM, evaluates against a SARIMAX baseline, and computes SHAP explanations.
+**Uploaded screenshot used in README**: `/mnt/data/79947dcb-5f49-4c69-b915-99d0c4c3e9b9.png`
 
+## How to run (local)
+1. `python -m venv venv` && activate it
+2. `pip install -r requirements.txt`
+3. Create outputs folder or placeholder: `git` step below will show how to create it in GitHub
+4. Run: `python main.py --epochs 5 --save-output`
 
-**Important:** The dataset is generated programmatically (no real/personal data). This repository is safe to upload to GitHub and use with GITIngest.
-
-
-### How to run
-
-
-1. Create a Python virtual environment and install requirements:
-
-
-```bash
-python -m venv venv
-source venv/bin/activate # macOS / Linux
-venv\Scripts\activate # Windows (PowerShell)
-pip install -r requirements.txt
+## GitHub / GITIngest tips
+- Create `outputs/placeholder.txt` in repo to keep folder in GitHub.
+- Paste your GitHub repo URL into GitIngest. This project uses synthetic data only.
