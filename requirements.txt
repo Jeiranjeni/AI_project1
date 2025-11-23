@@ -3,8 +3,7 @@ pandas
 matplotlib
 scikit-learn
 statsmodels
-prophet
-seaborn
+tensorflow>=2.8
+shap
+joblib
 tqdm
-jupyter
-notebook
