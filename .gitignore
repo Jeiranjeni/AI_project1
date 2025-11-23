@@ -1,0 +1,15 @@
+---
+
+
+## File: requirements.txt
+
+
+```text
+numpy
+pandas
+matplotlib
+scikit-learn
+tensorflow>=2.11
+shap
+statsmodels
+joblib
